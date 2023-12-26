@@ -22,9 +22,9 @@ app.use(passport.session());
 passport.use(
   new GoogleStrategy(
     {
-      clientID:
-        "475413079775-111cm6rssldo5839043cl365j6kik922.apps.googleusercontent.com",
-      clientSecret: "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",
+      
+      clientID:"typeyourID",
+clientSecret:"typeSecret",
       callbackURL: "http://localhost:3000/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
